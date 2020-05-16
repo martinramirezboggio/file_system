@@ -8,9 +8,7 @@ import com.filesystem.State
  */
 abstract class CreateEntry(name: String) extends Command {
   override def apply(state: State): State = {
-
     val workingDirectory = state.workingDirectory
-
     if(workingDirectory.hasEntry(name)){
       state.setMessage(s"Entry $name already exists!")
     }else if(name.contains(Directory.SEPARATOR)){

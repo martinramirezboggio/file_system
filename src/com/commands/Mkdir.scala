@@ -7,5 +7,5 @@ import com.filesystem.State
  */
 class Mkdir(name: String) extends CreateEntry(name) {
   override def createSpecificEntry(state: State): DirEntry =
-    Directory.empty(state.workingDirectory.parentPath, name)
+    Directory.empty(state.workingDirectory.path, name)
 }
