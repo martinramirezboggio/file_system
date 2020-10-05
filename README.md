@@ -1,6 +1,9 @@
 # file_system
 File system command line example in Scala
 
+Run:
+ - go to FileSystem file and Run the Scala object.
+
 you can use commands like:
 
 mkdir // to create a directory
